@@ -14,7 +14,7 @@ const ListMovies: FC<Props> = ({ result }) => {
 
         <div className="carousel rounded-box flex-wrap justify-center">
           {result && result.d.map((e, index) => (
-            <div key={e.id} className="bg-neutral transition ease-in-out hover:scale-105 card w-96 bg-base-100 shadow-xl m-10">
+            <div key={e.id} className="bg-neutral transition ease-in-out hover:scale-105 card w-96  shadow-xl m-10">
               <figure><img src={e.i && e.i.imageUrl ? e.i.imageUrl : ""} className='h-80 mt-8' alt={e.l} /></figure>
               <div className="card-body">
                 <h2 className="card-title">{e.l}</h2>
